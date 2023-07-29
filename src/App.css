@@ -1,38 +1,211 @@
 .App {
   text-align: center;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image {
+  background-image: url('./assets/images/krishna.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #0e6a88;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  min-height: 150px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.avatar {
+  background-image: url('./assets/images/krishna.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
+.image:hover,
+.avatar:hover {
+  transform: rotate3d()
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 100px;
+  margin-top: 10px;
+  cursor: pointer;
+
+}
+
+.dot.active {
+  background-color: gold;
+
+}
+
+.page {
+  width: 100vw !important;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 40px;
+  /* flex-wrap: nowrap !important;
+  flex-direction: column !important; */
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar {
+  width: 0px;
 }
 
-@keyframes App-logo-spin {
+.intro {
+
+  background-color: #0e6a88;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  ;
+  max-width: 900px;
+
+}
+
+.skillcard {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #f6f6f6;
+  margin: 10px;
+  min-width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 3px;
+  border-radius: 20px;
+}
+
+.txt {
+  text-shadow: 1px 1px 2px #000000
+}
+
+.exp {
+  background-color: #09546b;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.dob {
+  background-image: url('./assets/icons/calendar_2370264.png');
+}
+
+.ph {
+  background-image: url('./assets/icons/phone-call_2936030.png');
+}
+
+.home {
+  background-image: url('./assets/icons/house_3341924.png');
+}
+
+.mail {
+  background-image: url('./assets/icons/mail_3494619.png');
+}
+
+.lg>span {
+  background: rgb(0, 36, 29);
+  background: linear-gradient(90deg, rgba(0, 36, 29, 1) 0%, rgba(9, 121, 108, 1) 35%, rgba(0, 134, 255, 1) 100%);
+}
+
+.eduImg {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+}
+
+.MuiTimelineItem-missingOppositeContent::before {
+  content: none;
+  flex: 0 !important;
+}
+
+.intro-text {
+  overflow: hidden;
+  /* border-right: .15em solid rgb(152, 143, 127); */
+  white-space: nowrap;
+
+  font-size: 1.6rem;
+  width: 0;
+
+  animation:
+    typing 5s steps(25, end) forwards;
+  animation-delay: 3s;
+}
+
+.role {
+  overflow: hidden;
+  /* border-right: .15em solid rgb(152, 143, 127); */
+  white-space: nowrap;
+
+  font-size: 1.6rem;
+  width: 0;
+
+  animation:
+    typing 5s steps(25, end) forwards;
+  animation-delay: 8s;
+}
+
+.expe {
+  overflow: hidden;
+  /* border-right: .15em solid rgb(152, 143, 127); */
+  white-space: nowrap;
+
+  font-size: 1.6rem;
+  width: 0;
+
+  animation:
+    typing 5s steps(25, end) forwards;
+  animation-delay: 11s;
+}
+
+.welcome {
+  overflow: hidden;
+  /* border-right: .15em solid rgb(152, 143, 127); */
+  white-space: nowrap;
+
+  font-size: 1.6rem;
+  width: 0;
+
+  animation:
+    typing 5s steps(25, end) forwards;
+
+}
+
+.typed-out1 {
+  overflow: hidden;
+  border-right: .15em solid rgb(152, 143, 127);
+  white-space: nowrap;
+
+  font-size: 1.6rem;
+  width: 0;
+}
+
+@keyframes typing {
   from {
-    transform: rotate(0deg);
+    width: 0;
+    /* border-right: .15em solid rgb(152, 143, 127); */
   }
+
   to {
-    transform: rotate(360deg);
+    width: 100%;
+    /* border-right: 0em solid rgb(152, 143, 127); */
   }
 }
